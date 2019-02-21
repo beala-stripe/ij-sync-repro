@@ -6,4 +6,8 @@ object B1 {
     println("hello world")
   }
 
+  def calledByOtherTest(): Unit = {
+    println("sup")
+  }
+
 }

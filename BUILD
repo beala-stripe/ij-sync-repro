@@ -12,6 +12,17 @@ scala_test(
     ],
 )
 
+scala_test(
+    name = "other-test",
+    srcs = [
+        "OtherTest.scala",
+    ],
+    deps = [
+        ":d1",
+        ":b1"
+    ],
+)
+
 java_test(
     name = "test-b2",
     srcs = [
@@ -37,6 +48,13 @@ scala_library(
     name = "b1",
     srcs = [
         "B1.scala",
+    ],
+)
+
+scala_library(
+    name = "d1",
+    srcs = [
+        "D1.scala",
     ],
 )
 
