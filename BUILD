@@ -17,11 +17,10 @@ java_test(
     srcs = [
         "TestB2.java",
     ],
-    test_class = "TestB2",
+    test_class = "x.TestB2",
     deps = [
         ":b2",
     ],
-    tags = ["manual"],
 )
 
 scala_library(
